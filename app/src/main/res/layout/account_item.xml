@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="4dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginEnd="4dp"
+    android:background="@drawable/custom_border"
+    android:padding="4dp">
+
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="101dp"
+        android:layout_height="wrap_content"
+        android:text="Transfer  Type"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/black"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/textView10"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView10" />
+
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="102dp"
+        android:layout_height="wrap_content"
+        android:text="Target Branch"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/textView9"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView11"
+        app:layout_constraintTop_toTopOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="102dp"
+        android:layout_height="wrap_content"
+        android:text="Amount 2"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="101dp"
+        android:layout_height="wrap_content"
+        android:text="Amount 1"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/textView8"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView10"
+        app:layout_constraintTop_toTopOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/Amount2Result"
+        android:layout_width="102dp"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:text="30.00"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ttAmount1Result"
+        app:layout_constraintTop_toTopOf="@+id/ttAmount1Result" />
+
+
+    <TextView
+        android:id="@+id/ttBranchResult"
+        android:layout_width="102dp"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:text="Krr"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/ttAmount1Result"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ttTyperesult"
+        app:layout_constraintTop_toTopOf="@+id/ttTyperesult" />
+
+    <TextView
+        android:id="@+id/ttTyperesult"
+        android:layout_width="101dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:padding="4dp"
+        android:text="Bt"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/ttBranchResult"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/ttAmount1Result"
+        android:layout_width="101dp"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:text="1000.00"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/Amount2Result"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ttBranchResult"
+        app:layout_constraintTop_toTopOf="@+id/ttBranchResult" />
+
+    <TextView
+        android:id="@+id/openingBal"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:text="Current Balance"
+        android:textAlignment="viewStart"
+        android:textColor="@color/purple_500"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ttTyperesult" />
+
+    <TextView
+        android:id="@+id/closingBal"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:layout_marginBottom="4dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/purple_500"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/openingBal"
+        app:layout_constraintTop_toBottomOf="@+id/ttAmount1Result" />
+
+    <TextView
+        android:id="@+id/tvstatus"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:textColor="@color/red"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/closingBal"
+        app:layout_constraintTop_toTopOf="@+id/closingBal" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
